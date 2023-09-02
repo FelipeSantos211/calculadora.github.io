@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=LCD+Mono&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: #1B1E23;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transform: scale(0.8);
+}
+
+.conteudo {
+    width: 300px;
+    height: 450px; /* Aumentando a altura da calculadora */
+    padding: 20px;
+    background: #221D1D;
+    border: 3px solid #000000;
+    box-shadow: 0px 4px 41px rgba(0, 0, 0, 0.25);
+    border-radius: 41px;
+}
+
+.visor {
+    margin-top: 25px;
+    font-family: 'LCD Mono', monospace;
+    margin-bottom: 25px; /* Aumentando a margem inferior do visor */
+    background-color: #587845;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: right;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.btn {
+    background: linear-gradient(135.08deg, #3C4043 -5.45%, #161925 112.99%);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:active {
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4) inset;
+    transform: translateY(2px);
+}
+
+.btn.equal {
+    grid-row: span 4;
+    background: linear-gradient(168.34deg, #F87700 -19.8%, #EF790C 110.65%);
+    border: 2px solid #000000;
+    border-radius: 13px;
+}
+
+
+  
